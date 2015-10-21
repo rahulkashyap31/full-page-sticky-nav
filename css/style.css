@@ -1,0 +1,132 @@
+body{
+  background-color: #ddd;
+  margin:0;
+  padding: 0;
+  font-family: Segoe UI;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav {
+    background-color: #B53B27;
+    width: 100%;
+    z-index: 20;
+}
+ul.main-menu{
+  text-align: center;
+  align-items: center;
+}
+nav > ul.main-menu > li{
+  display: inline;
+}
+nav > ul.main-menu > li > a{
+  background-color: #B53B27;
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  outline:none;
+}
+nav > ul.main-menu > li > a:hover{
+  background-color: #8F2413;
+}
+.sticky-nav{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.cover {
+    background: transparent url("../img/banner.jpg") repeat scroll 0% 0%;
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+hr {
+    width: 850px;
+    border: 1px solid #C6C6C6;
+}
+.content {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.content h1 {
+    color: #BD0F0F;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.content p {
+    color: #534949;
+}
+.registration {
+    margin: 100px auto;
+    width: 300px;
+    background-color: #ddd;
+    text-align: center;
+}
+.registration h3 {
+    color: #C90404;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.registration > form > input[type="text"],
+.registration > form > input[type="password"]{
+    width: 90%;
+    margin-bottom: 15px;
+  }
+.registration > form > input[type="submit"]{
+  background-color: #B53B27;
+  color:#eee;
+  cursor: pointer;
+}
+.registration > form > input[type="submit"]:hover{
+  background-color: #8F2413;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border-style: none;
+    border-radius: 5px;
+}
+.img-container {
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 50%;
+    background: transparent url("../img/astronaut.jpg") repeat scroll 0% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+.img-container a {
+    position: relative;
+    top: 240px;
+    color: #fff;
+    background-color:  rgba(255, 255, 255, 0.24);
+    padding: 15px 25px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+.img-container a:hover {
+  background-color: #eee;
+  color: #000;
+}
+footer {
+    background-color: #771302;
+    color: #E0E0E0;
+    padding: 14px 15px;
+}
+footer > p {
+    width: 500px;
+    display: inline;
+}

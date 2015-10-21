@@ -1,0 +1,74 @@
+doctype html
+html(lang='en')
+    head
+        title Video of the week
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='description', content='description')
+        meta(name='keywords', content='keywords')
+        meta(name='author', content='author')
+        meta(name="robots", content="index, follow")
+
+        //- ----- link website ----- //
+        link(rel='icon' href='img/ted.png' type='image/x-icon')
+
+        //- ----- CSS Files ----- //
+        link(rel='stylesheet', href='css/style.css')
+      
+    body
+    
+    header
+    
+      
+      .cover
+      nav#nav-bar
+        ul.main-menu
+          li: a(href="#") Home
+          li: a(href="#") Service
+          li: a(href="#") Portfolio
+          li: a(href="#") About 
+          li: a(href="#") Contact
+    
+    .content.margin-top-bottom
+      h1 Talk of the Week
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut gravida turpis. Suspendisse in eros in porta ornare. Nunc quis vulputate ante, ac maximus ipsum. Integer sed urna sit amet tellus sollicitudin lobortis sit amet at ligula. 
+       
+    hr
+    .registration.margin-top-bottom
+      h3 Save your seat
+      form(method="post", action="abc.html")
+        input(type="text",placeholder="First Name")
+        input(type="text",placeholder="Last Name")
+        input(type="text",placeholder="Username")
+        input(type="text",placeholder="E-mail")
+        input(type="password",placeholder="Password")
+        input(type="Submit",value="Hit-on")
+    
+    
+    hr
+    .img-container.margin-top-bottom
+      a(href="#") Watch Now
+          
+    .content.margin-top-bottom
+      h1 Talk of the Week
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut gravida turpis. Suspendisse in eros in porta ornare. Nunc quis vulputate ante, ac maximus ipsum. Integer sed urna sit amet tellus sollicitudin lobortis sit amet at ligula.
+  
+    footer
+      p Copyright (c) 2015 BlaBlaBla-Org - All Rights Reserved.
+      
+    
+    script(type='text/javascript', src='js/main.js')
+    script(type='text/javascript', src='js/jquery.js')
+    
+    script(type="text/javascript").
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          var winHeight = $(this).scrollTop()
+          var elHeight = 580
+          if($(winHeight >= elHeight){
+            $('#nav-bar').addClass('sticky-nav');
+          }else {
+            $('#nav-bar').removeClass('sticky-nav');
+          }
+          });
+      });   

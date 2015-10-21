@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video of the week</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="author">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="img/ted.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body></body>
+  <header>
+    <div class="cover"></div>
+    <nav id="nav-bar">
+      <ul class="main-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content margin-top-bottom">
+    <h1>Talk of the Week</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut gravida turpis. Suspendisse in eros in porta ornare. Nunc quis vulputate ante, ac maximus ipsum. Integer sed urna sit amet tellus sollicitudin lobortis sit amet at ligula. </p>
+  </div>
+  <hr>
+  <div class="registration margin-top-bottom">
+    <h3>Save your seat</h3>
+    <form method="post" action="abc.html">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="Username">
+      <input type="text" placeholder="E-mail">
+      <input type="password" placeholder="Password">
+      <input type="Submit" value="Hit-on">
+    </form>
+  </div>
+  <hr>
+  <div class="img-container margin-top-bottom"><a href="#">Watch Now</a></div>
+  <div class="content margin-top-bottom">
+    <h1>Talk of the Week</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut gravida turpis. Suspendisse in eros in porta ornare. Nunc quis vulputate ante, ac maximus ipsum. Integer sed urna sit amet tellus sollicitudin lobortis sit amet at ligula.</p>
+  </div>
+  <footer>
+    <p>Copyright (c) 2015 BlaBlaBla-Org - All Rights Reserved.</p>
+  </footer>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var winHeight = $(this).scrollTop()
+        var elHeight = 580
+        if($(winHeight >= elHeight){
+          $('#nav-bar').addClass('sticky-nav');
+        }else {
+          $('#nav-bar').removeClass('sticky-nav');
+        }
+        });
+    });   
+  </script>
+</html>
