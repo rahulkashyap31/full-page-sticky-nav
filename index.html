@@ -52,16 +52,15 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        var winHeight = $(this).scrollTop()
-        var elHeight = 580
-        if($(winHeight >= elHeight){
-          $('#nav-bar').addClass('sticky-nav');
-        }else {
-          $('#nav-bar').removeClass('sticky-nav');
-        }
-        });
-    });   
+    $(window).scroll(function(){
+    var scrollHeight = $(this).scrollTop(); 
+    var bannerHeight = 580;
+    if(scrollHeight >= bannerHeight){
+      $('#nav-bar').addClass('sticky-nav');
+    }else {
+      $('#nav-bar').removeClass('sticky-nav');
+    }
+    });
+}); 
   </script>
 </html>
