@@ -53,8 +53,10 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript">
     $(window).scroll(function(){
-    var scrollHeight = $(this).scrollTop(); 
+      
+    var scrollHeight = $(window).scrollTop(); 
     var bannerHeight = 580;
+      
     if(scrollHeight >= bannerHeight){
       $('#nav-bar').addClass('sticky-nav');
     }else {
